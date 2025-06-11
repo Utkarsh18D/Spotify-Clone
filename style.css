@@ -1,0 +1,453 @@
+* {
+    font-family: url("Unconfirmed\ 488011.crdownload");
+}
+
+
+body {
+    background-color: black;
+}
+
+.container {
+    display: flex;
+
+}
+
+.left {
+    position: relative;
+    width: 25vw;
+    height: 100vw;
+    background-color: rgba(34, 34, 34, 0.566);
+    opacity: 1;
+    margin-right: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column wrap;
+    overflow-y: auto;
+}
+
+.songlist {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    justify-content: left;
+    max-height: 70vw;
+}
+
+.search-bar {
+    background-color: grey;
+
+    width: 300px;
+    padding: 10px 15px;
+    margin: 20px;
+
+    border: 1px solid #ccc;
+    border-radius: 999px;
+    /* makes it fully rounded */
+    font-size: 16px;
+    outline: none;
+    transition: box-shadow 0.2s ease;
+}
+
+.search-bar::placeholder {
+    color: whitesmoke;
+    opacity: 1;
+    /* set to 1 to make it fully visible */
+}
+
+
+.search-bar:focus {
+    box-shadow: 100 500 20px rgba(0, 210, 0, 1);
+    border: 4px solid rgba(0, 210, 0, 1);
+}
+
+.right {
+    width: 75vw;
+    height: 100vw;
+    position: relative;
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom right, #1a1a1a 0%, #323232c8 3%, black 100%);
+
+}
+
+.navbar {
+    display: flex;
+    height: 5vw;
+    background-color: black;
+
+}
+
+.logo {
+    cursor: pointer;
+    align-items: center;
+    margin: 20px;
+    margin-right: 300px;
+}
+
+.searchlogo {
+    position: relative;
+    width: 30px;
+    right: 90px;
+    filter: invert(1);
+}
+
+
+.text {
+    color: white;
+    position: relative;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.text1:hover {
+    color: black;
+    background-color: whitesmoke;
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 10px;
+    color: rgb(83, 0, 0);
+    gap: 13px;
+}
+
+.download {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 999px;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 10px;
+    transition: backround-color 0.3s ease-out;
+    transition: color 0.3s ease-out;
+}
+
+.download:hover {
+    color: black;
+    background-color: whitesmoke;
+}
+
+.gap {
+    color: white;
+    position: relative;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 57px;
+
+}
+
+.install {
+    position: relative;
+    width: 30px;
+    margin-left: 20px;
+    filter: invert(1);
+}
+
+.text1 {
+    color: white;
+    position: relative;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 13px;
+    margin-top: 32px;
+    transition: backround-color 0.3s ease-out;
+    transition: color 0.3s ease-out;
+}
+
+.download1 {
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 30px;
+    font-weight: bold;
+    border: 2px solid white;
+    border-radius: 999px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 20px;
+    margin-left: 100px;
+    width: 180px;
+    transition: backround-color 0.3s ease-out;
+    transition: color 0.3s ease-out;
+
+}
+
+
+.download2 {
+    background-color: white;
+    color: black;
+    border: none;
+    font-size: 30px;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 999px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 24px;
+    transition: backround-color 0.3s ease-out;
+}
+
+.download1:hover {
+    color: black;
+    background-color: whitesmoke;
+}
+
+.download2:hover {
+    background-color: rgb(201, 201, 201);
+}
+
+.playlisttext {
+    display: inline-block;
+    color: white;
+    position: relative;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.playlists {
+    display: flex;
+    overflow-x: auto;
+    max-width: 70vw;
+
+}
+
+/* Works on Chrome, Safari, Edge */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #121212;
+    /* dark background */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #1DB954;
+    /* Spotify green */
+    border-radius: 10px;
+    border: 2px solid #121212;
+    /* for padding inside track */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #1ed760;
+}
+
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #1DB954 #121212;
+}
+
+
+.play1 {
+    color: white;
+    font-size: 30px;
+    line-height: 4px;
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.play1 img {
+    background-position: center;
+    object-fit: fill;
+    padding: 4px;
+    border-radius: 15px;
+}
+
+.play1 p {
+    font-style: italic;
+}
+
+.hover1 {
+    opacity: 1;
+    transition: background-color 0.2s ease-in-out;
+    /* Optional: smooth transition */
+}
+
+.hover:hover {
+    opacity: 1;
+    background-color: rgba(0, 210, 0, 0.5);
+}
+
+.playbutton {
+    position: absolute;
+    bottom: 120px;
+    right: 20px;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.hover:hover .playbutton {
+    opacity: 1;
+}
+
+
+.playbar {
+    position: fixed;
+    bottom: 0px;
+    width: 75%;
+    height: 90px;
+    color: whitesmoke;
+    background-color: #2E2E2E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.seekbar {
+    border: 2px solid #E0E0E0;
+    width: 98.8%;
+    height: 5px;
+    position: absolute;
+    bottom: 10px;
+    margin-top: 12px;
+    left:2px;
+}
+
+.circle {
+    position: relative;
+    border: 4px solid rgb(210, 210, 210);
+    background-color: #212121;
+    border-radius: 999px;
+    width: 10px;
+    height: 10px;
+    bottom: 7px;
+    left: -5px;
+transition: left 0.5s linear;
+
+}
+
+.controls {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 7px;
+    cursor: pointer;
+}
+
+
+
+.card {
+    display: flex;
+    color: rgb(0, 210, 0);
+    font-size: 30px;
+    margin: 15px;
+    padding: 20px;
+    align-items: center;
+    max-width: 500px;
+    cursor: pointer;
+    border: 2px solid lightgreen;
+    border-radius: 10px;
+    transition: background-color, color 0.2s ease-in;
+
+}
+
+.card:hover {
+    background-color: rgba(0, 210, 0, 0.5);
+    color: white;
+}
+
+.music {
+    background-image: url(musicicon.svg);
+    background-repeat: no-repeat;
+    background-size: 30px;
+}
+
+.musiciconcard {
+    width: 30px;
+    margin-right: 15px;
+}
+
+.playbuttoncard {
+    position: absolute;
+    right: 25px;
+    opacity: 0;
+}
+
+.trackdetails {
+    color: rgba(0, 210, 0, 1);
+    font-size: 30px;
+    width: 300px;
+    height: 30px;
+    position: absolute;
+    left: 90px;
+    align-self: center;
+}
+
+.Volumebar {
+    position: absolute;
+    right: 30px;
+}
+
+.Volumebar {
+    border-radius: 15px;
+    appearance: none;
+    background: linear-gradient(to right, green 20%, rgba(0, 210, 0, 1));
+    outline: #E0E0E0;
+}
+
+.Volumebar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 16px;
+    width: 16px;
+    background: white;
+    border-radius: 999px;
+    cursor: pointer;
+}
+
+.prev,
+.next,
+.pauseplay {
+    border: 2px solid rgba(0, 210, 0, 1);
+    border-radius: 999px;
+}
+
+.songtimer {
+    color: rgba(0, 210, 0, 1);
+    font-size: 30px;
+    width: 300px;
+    height: 30px;
+    align-self: right;
+    position: relative;
+    left: 190px;
+}
+
+.playlistsdynamic {
+     display: flex;
+    overflow-x: auto;
+    max-width: 70vw;
+}
+
+.playdy {
+     color: white;
+    font-size: 30px;
+    line-height: 4px;
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.playdy img {
+    background-position: center;
+    object-fit: fill;
+    padding: 4px;
+    border-radius: 15px;
+}
